@@ -14,7 +14,7 @@ function init(cb) {
 	var y = 0;
 	var l = 0;
 	var t = 0;
-	var zc = false;
+	//var zc = false;
 	var isDown = false;
 	var isClick = false;
 	
@@ -38,7 +38,7 @@ function init(cb) {
         mz = m.find(".content-z");
         mc = m.find(".content-c");
         vi = m.find("video");
-        zc = m.hasClass("content-b");
+        //zc = m.hasClass("content-b");
 
 
         //获取x坐标和y坐标
@@ -53,11 +53,11 @@ function init(cb) {
 
 	    isClick = true;
 
-	    mz.on("mousedown",function(e){
-    		var me = $(this);
-    		zc = me.hasClass("content-b");
-			mz.html("已点赞");
-		});
+	 //    mz.on("mousedown",function(e){
+  //   		var me = $(this);
+  //   		zc = me.hasClass("content-b");
+		// 	mz.html("已点赞");
+		// });
 
     });
 
