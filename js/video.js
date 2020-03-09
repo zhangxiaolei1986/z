@@ -115,8 +115,8 @@ function init(cb) {
 			vi.trigger('play');
 			//vi.play();//播放
 
-			mz.show();
-			mc.show();
+			// mz.show();
+			// mc.show();
 
 			
 		} else if ( ms === "true" &&  isDown === false ){

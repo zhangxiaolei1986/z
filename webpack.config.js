@@ -5,7 +5,8 @@ const publicPath = '/dist/';
 
 module.exports = {
     entry: {
-        index: './js/index.js'
+        index: './js/index.js',
+        admin: './js/admin.js'
     },
     output: {
         filename: '[name].js',

@@ -1,0 +1,129 @@
+
+
+.nav { 
+	
+	width: 100%;
+	line-height: 100px;
+	text-align: center;
+	background-color: #808080;
+	border-bottom: 1px solid #ffffff;
+
+}
+
+.main {
+
+	width: 100%;
+	overflow: scroll;
+	background-color: #91836F;
+	//border: 1px solid #ff0000;
+
+}
+
+.main-menu {
+	
+	float: left;
+	width: 20%;
+	height: 100%;
+	border-right: 1px solid #ffffff;
+	overflow: hidden;
+
+	.menu-item{
+		width: 100%;
+
+		.menu-item-tit{
+			
+			width: 100%;
+			font-size: 18px;
+			line-height: 60px;
+			text-align: center;
+			cursor: pointer;
+			border-bottom: 1px solid #ffffff;
+			cursor: pointer;
+
+			&.curr{
+				background-color: #44A3BB;
+			}
+		}
+
+		.menu-item-content{
+
+			display: none;
+			width: 100%;
+			//border-bottom: 1px solid #ffffff;
+
+			li{
+				padding-right: 60px;
+				font-size: 18px;
+				line-height: 50px;
+				text-align: right;
+				border-bottom: 1px solid #ffffff;
+				cursor: pointer;
+
+				&.curr{
+					background-color: #44A3BB;
+				}
+
+			}
+		}
+	}
+}
+
+.main-cont{
+
+	float: right;
+	width: 79%;
+	height: 100%;
+
+	.main-cont-inner{
+		padding: 5%;
+	}
+
+	.item{
+		
+		display: none;
+		float: left;
+		width: 100%;
+		border: 1px solid #ffffff;
+
+		.col {
+			
+			padding-top: 20px;
+			padding-bottom: 20px;
+			float: left;
+			height: 40px;
+			width: 100%;
+			border-bottom: 1px solid #ffffff;
+
+			span{
+
+				display: inline-block;
+				width: 120px;
+				font-size: 18px;
+				text-align: center;
+
+			}
+
+			input{
+
+				width: 50%;
+				height: 40px;
+				font-size: 14px;
+				color: #000000;
+				text-indent: 10px;
+				&.upload{
+					width: 120px;
+					height: 100%;
+				}
+				&.submit{
+					margin-left: 40%;
+					width: 120px;
+					height: 100%;
+				}
+			}
+		}
+	}
+}
+
+
+
+

@@ -19,6 +19,7 @@ function css() {
     return src([
         'less/common.less',
         'less/index.less',
+        'less/admin.less',
     ])
     .pipe(less())
     .pipe(minifyCSS())
