@@ -1,0 +1,144 @@
+
+// .warp{
+// 	width: 5760px;
+// 	height: 2160px;
+// 	overflow: hidden;
+// 	border: 1px solid #ff0000;
+// }
+@import "common-var.less";
+
+html,body{
+	background-color: #000000;
+}
+.section{
+
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+
+	.slide-botton{
+
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		display: none;
+		margin-left: -30px;
+		margin-top: -15px;
+		width: 90px;
+		height: 30px;
+		font: normal 12px/30px @fontBaseYahei;
+		border: 1px solid #cccccc;
+		background-color: #cccccc;
+		border-radius: 5px;
+		cursor: pointer;
+		text-align: center;
+		z-index: 2;
+
+	}
+	.slide-item{
+		position: relative;
+		display: none;
+		width: 100%;
+		height: 100%;
+
+		&.index{
+			display: block;
+		}
+		&.item-menu,
+		&.item-nav{
+
+			width: 100%;
+			height: 100%;
+			background-color: #0909F7;
+
+
+			.table{
+
+				display: table;
+				width: 100%;
+				height: 100%;
+				.col{
+
+					display: table-cell;
+					vertical-align: middle;
+					text-align: center;
+
+					span{
+
+						margin-left: 10px;
+						padding: 30px 80px;
+						display: inline-block;
+						font: normal 18px @fontBaseYahei;
+						border: 1px solid #cccccc;
+						background-color: #777B88;
+						border-radius: 5px;
+						cursor: pointer;
+
+					}
+				}
+			}
+		}
+	}
+	.item{
+		
+		margin-top: 10px;
+		margin-left: 10px;
+		float: left;
+		width: 90px;
+		height: 90px;
+		cursor: pointer;
+		z-index: 3;
+		
+		.item-video{
+			position: relative;
+			width: 100%;
+			height: 100%;
+			transition:all 1s ease-out;
+
+
+			&.item-video-b{
+			  transform:scale(2);
+			  -webkit-transform:scale(2);  /*兼容-webkit-引擎浏览器*/
+			  -moz-transform:scale(2);     /*兼容-moz-引擎浏览器*/
+			}
+
+			video{
+
+				display: block;
+				font-size: 0;
+				width: 100%;
+				height: 100%;
+				background: none;
+				border: none;
+				background-color: none;
+				object-fit: fill;
+			}
+
+			.content-z,
+			.content-c{
+
+				display: none;
+				position: absolute;
+				top: 3px;
+				width: 30px;
+				background-color: #cccccc;
+				border: 1px solid #333333;
+				border-radius: 2px;
+				text-align: center;
+				cursor: pointer;
+				font-size:0.08rem;
+
+				transform:scale(1);
+				-webkit-transform:scale(1);  /*兼容-webkit-引擎浏览器*/
+				-moz-transform:scale(1);     /*兼容-moz-引擎浏览器*/
+
+
+			}
+
+			.content-z{ left: 3px }
+			.content-c{ right: 3px }
+		}
+	}
+}

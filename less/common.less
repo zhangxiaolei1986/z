@@ -1,0 +1,20 @@
+
+@import "common-reset.less";
+@import "common-css3.less";
+@import "common-var.less";
+
+.clearfix:after{content:'';display: block; clear:both;}
+.clearfix{zoom:1};
+
+.overflow-eclipse{
+    overflow: hidden;
+    word-wrap: break-word;
+    word-break: break-all;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.opacity{
+    background-color:#000000;/* IE6和部分IE7内核的浏览器(如QQ浏览器)下颜色被覆盖 */
+    background-color:rgba(0,0,0,0.2); /* IE6和部分IE7内核的浏览器(如QQ浏览器)会读懂，但解析为透明 */
+    filter:Alpha(opacity=50);/* 只支持IE6、7、8、9 */
+}

@@ -1,0 +1,27 @@
+{
+    "code": 200,
+    "msg": "ok",
+    "data": {
+        "list": [
+            {
+                "srcid":"0",
+                "nextid":"1",
+                "inanimate": "fadeInDown",
+                "outanimate": "fadeOutLeft",
+                "time": "700"
+            },{
+                "srcid":"1",
+                "nextid":"2",
+                "inanimate": "fadeInRightBig",
+                "outanimate": "hide",
+                "time": "0"
+            },{
+                "srcid":"2",
+                "nextid":"0",
+                "inanimate": "fadeInUpBig",
+                "outanimate": "fadeOutDown",
+                "time": "500"
+            }
+        ]
+    }
+}

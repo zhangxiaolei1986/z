@@ -1,0 +1,43 @@
+// 被多方引用的，但是本身不主要作为class功能的
+
+.trans(@animate-time: .25s){
+    -webkit-transition: all @animate-time linear;
+    -ms-transition: all @animate-time linear;
+    -o-transition: all @animate-time linear;
+    transition: all @animate-time linear;
+}
+
+.trans(@time: .25s) {
+    -webkit-transition: all @time linear;
+    -ms-transition: all @time linear;
+    -o-transition: all @time linear;
+    transition: all @time linear;
+}
+
+.opacity-background(@url){
+    background: url(@url) 0 0 no-repeat;
+    _background:none;
+    _filter : progid:DXImageTransform.Microsoft.AlphaImageLoader(src="@{url}" );
+}
+
+// 实现重载
+.opacity-background(@url, @positionX, @positionY) {
+    background: url(@url) @positionX @positionY no-repeat;
+    _background:none;
+    _filter : progid:DXImageTransform.Microsoft.AlphaImageLoader(src="@{url}" );
+}
+
+.placeholder-color(@placeHolderColor) {
+    input::-webkit-input-placeholder { /* WebKit browsers */
+        color: @placeHolderColor;
+    }
+    input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: @placeHolderColor;
+    }
+    input::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: @placeHolderColor;
+    }
+    input:-ms-input-placeholder { /* Internet Explorer 10+ */
+        color: @placeHolderColor;
+    }
+}
