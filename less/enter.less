@@ -1,0 +1,99 @@
+
+html,
+body {
+    
+    position: relative;
+    background-color: #000000;
+    overflow: hidden;
+
+}
+
+.wrap {
+
+    position: relative;
+
+    #content {
+
+        position: absolute;
+        top: 0;
+        right: 100%;
+
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    #console{
+        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        margin-left: -60px;
+        margin-top: -60px;
+
+        width: 120px;
+        height: 120px;
+        z-index: 2;
+
+        .console-button {
+
+            position: relative;
+            width: 100%;
+            height: 100%;
+            color: #ffffff;
+            text-align: center;
+            font-size: 18px;
+            line-height: 120px;
+            background-color: #4822DD;
+            cursor: pointer;
+
+        }
+        .console-button:before {
+            position: absolute;
+            top: 0;
+            left: -60px;
+            content: '';
+            display: block;
+            
+            width: 0px;
+            height: 0px;
+
+            border-right: 60px solid #4822DD;
+            border-left: none;
+            border-top: 60px solid transparent;
+            border-bottom: 60px solid transparent;
+        }
+        .console-button:after {
+            position: absolute;
+            top: 0;
+            right: -60px;
+            content: '';
+            display: block;
+            
+            width: 0;
+            height: 0;
+            
+            border-right: none;
+            border-left: 60px solid #4822DD;
+            border-top: 60px solid transparent;
+            border-bottom: 60px solid transparent;
+        }
+    }
+
+}
+
+
+.item{
+    
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+    width: 120px;
+    height: 120px;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}

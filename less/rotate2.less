@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  perspective: 500px;
+  perspective-origin: 50% 30%;
+  background: #E3DFD3;
+  overflow: hidden;
+}
+
+.contant{
+	width: 900px;
+	height: 600px;
+	margin: auto auto;
+	position: relative;
+	transform-style: preserve-3d;
+	animation: mybt 8s infinite linear ;
+}
+
+@keyframes mybt{
+	to{
+		transform: rotateY(360deg);
+	}
+}
+
+
+.main .item {
+  position: absolute;
+  width: 100px;
+  height: 111px;
+  left: 47%;
+  bottom: 50%;
+  transform-origin: 50% 0;
+  //transform--style属性指定嵌套元素是怎样在三维空间中呈现
+  transform-style: preserve-3d;
+
+  img{
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+
+.main .item:nth-child(1) {
+  transform: rotateY(30deg) translateZ(-300px);
+  background-position: 0px 0;
+}
+
+.main .item:nth-child(2) {
+  transform: rotateY(60deg) translateZ(-300px);
+  background-position: -100px 0;
+}
+.main .item:nth-child(3) {
+  transform: rotateY(90deg) translateZ(-300px);
+  background-position: -200px 0;
+}
+.main .item:nth-child(4) {
+  transform: rotateY(120deg) translateZ(-300px);
+  background-position: -300px 0;
+}
+.main .item:nth-child(5) {
+  transform: rotateY(150deg) translateZ(-300px);
+  background-position: -400px 0;
+}
+.main .item:nth-child(6) {
+  transform: rotateY(180deg) translateZ(-300px);
+  background-position: -500px 0;
+}
+.main .item:nth-child(7) {
+  transform: rotateY(210deg) translateZ(-300px);
+  background-position: -600px 0;
+}
+.main .item:nth-child(8) {
+  transform: rotateY(240deg) translateZ(-300px);
+  background-position: -700px 0;
+}
+.main .item:nth-child(9) {
+  transform: rotateY(270deg) translateZ(-300px);
+  background-position: -800px 0;
+}
+.main .item:nth-child(10) {
+  transform: rotateY(300deg) translateZ(-300px);
+  background-position: -900px 0;
+}
+.main .item:nth-child(11) {
+  transform: rotateY(330deg) translateZ(-300px);
+  background-position: -1000px 0;
+}
+.main .item:nth-child(12) {
+  transform: rotateY(360deg) translateZ(-300px);
+  background-position: -1100px 0;
+}

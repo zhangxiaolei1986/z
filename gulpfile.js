@@ -20,6 +20,10 @@ function css() {
         'less/common.less',
         'less/index.less',
         'less/admin.less',
+        'less/enter.less',
+        'less/rotate.less',
+        'less/rotate2.less',
+        'less/rotate3.less'
     ])
     .pipe(less())
     .pipe(minifyCSS())
